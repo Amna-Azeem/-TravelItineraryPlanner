@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Travel Plans</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📍 Your Travel Plans</h1>
+        
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Destination</th>
+                <th>Date</th>
+                <th>Budget</th>
+            </tr>
+            <tr th:each="plan, iterStat : ${travelPlans}">
+                <td th:text="${iterStat.index + 1}"></td>
+                <td th:text="${plan.destination}"></td>
+                <td th:text="${plan.date}"></td>
+                <td th:text="'$' + ${plan.budget}"></td>
+            </tr>
+        </table>
+
+        <a href="/">➕ Add More Plans</a>
+    </div>
+</body>
+</html>
