@@ -1,0 +1,158 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #ff9966, #ff5e62);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    animation: fadeIn 1s ease-in-out;
+    color: #333;
+}
+
+/* Main container */
+.container {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    width: 40%;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Heading */
+h1 {
+    color: #222;
+    margin-bottom: 20px;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+input {
+    padding: 12px;
+    margin-top: 5px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #ff5e62;
+    outline: none;
+}
+
+/* Button styles */
+button {
+    background-color: #ff5e62;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 16px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #ff3b3b;
+    transform: scale(1.05);
+}
+
+/* Travel plans section */
+.travel-plans {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.travel-plans ul {
+    list-style: none;
+    padding: 0;
+}
+
+.travel-plans li {
+    background: #f9f9f9;
+    padding: 12px;
+    margin: 6px 0;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    transition: transform 0.2s;
+}
+
+.travel-plans li:hover {
+    transform: translateX(5px);
+}
+
+/* Styling for travel plans table */
+table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #ff6b81;
+    color: white;
+}
+
+td {
+    background: #ffecec;
+}
+
+/* Links */
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff4757;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: #e84118;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
